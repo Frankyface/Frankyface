@@ -145,13 +145,12 @@ The bigger swings — mostly private while they cook.
 <div align="center">
 
 <picture>
-  <source media="(prefers-color-scheme: dark)" srcset="https://github-readme-stats.vercel.app/api?username=Frankyface&show_icons=true&hide_border=true&include_all_commits=true&count_private=true&title_color=35e08b&icon_color=35e08b&text_color=9fb3c8&bg_color=0d1626">
-  <img height="160" alt="GitHub stats" src="https://github-readme-stats.vercel.app/api?username=Frankyface&show_icons=true&hide_border=true&include_all_commits=true&count_private=true&title_color=0f9d58&icon_color=0f9d58&text_color=41505e&bg_color=f3f8f5">
+  <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/Frankyface/Frankyface/main/assets/stats-dark.svg">
+  <source media="(prefers-color-scheme: light)" srcset="https://raw.githubusercontent.com/Frankyface/Frankyface/main/assets/stats-light.svg">
+  <img alt="GitHub statistics" src="https://raw.githubusercontent.com/Frankyface/Frankyface/main/assets/stats-dark.svg" width="100%">
 </picture>
-<picture>
-  <source media="(prefers-color-scheme: dark)" srcset="https://github-readme-stats.vercel.app/api/top-langs/?username=Frankyface&layout=compact&hide_border=true&langs_count=8&title_color=35e08b&text_color=9fb3c8&bg_color=0d1626">
-  <img height="160" alt="Top languages" src="https://github-readme-stats.vercel.app/api/top-langs/?username=Frankyface&layout=compact&hide_border=true&langs_count=8&title_color=0f9d58&text_color=41505e&bg_color=f3f8f5">
-</picture>
+
+<sub>Rendered from the live API by <a href="scripts/build-stats.mjs"><code>build-stats.mjs</code></a> and committed daily — no third-party stat service to rate-limit or go down.</sub>
 
 <br><br>
 

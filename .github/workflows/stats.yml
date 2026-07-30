@@ -1,0 +1,46 @@
+name: Refresh profile stats
+
+on:
+  schedule:
+    - cron: "17 5 * * *"
+  workflow_dispatch:
+  push:
+    branches:
+      - main
+    # Only rebuild on a push when the generator itself changes. The job commits
+    # to assets/, so narrowing this keeps it from re-triggering on its own output.
+    paths:
+      - "scripts/build-stats.mjs"
+      - ".github/workflows/stats.yml"
+
+permissions:
+  contents: write
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-node@v4
+        with:
+          node-version: "20"
+
+      - name: Render stat cards
+        run: node scripts/build-stats.mjs
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          GH_USER: ${{ github.repository_owner }}
+
+      - name: Commit if the numbers moved
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          if [ -n "$(git status --porcelain assets)" ]; then
+            git add assets/stats-dark.svg assets/stats-light.svg
+            git commit -m "chore: refresh profile stats"
+            git push
+          else
+            echo "Stats unchanged."
+          fi
