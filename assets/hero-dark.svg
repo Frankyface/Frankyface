@@ -1,0 +1,113 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 300" width="1000" height="300" role="img" aria-label="Cameron Bubyn - builds things that ship">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#0a1018"/>
+      <stop offset="0.55" stop-color="#0d1626"/>
+      <stop offset="1" stop-color="#070a0f"/>
+    </linearGradient>
+    <radialGradient id="glowA" cx="0.16" cy="0.2" r="0.75">
+      <stop offset="0" stop-color="#35e08b" stop-opacity="0.22"/>
+      <stop offset="1" stop-color="#35e08b" stop-opacity="0"/>
+    </radialGradient>
+    <radialGradient id="glowB" cx="0.88" cy="0.1" r="0.65">
+      <stop offset="0" stop-color="#38bdf8" stop-opacity="0.18"/>
+      <stop offset="1" stop-color="#38bdf8" stop-opacity="0"/>
+    </radialGradient>
+    <linearGradient id="ink" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0" stop-color="#ffffff"/>
+      <stop offset="0.55" stop-color="#dbfaea"/>
+      <stop offset="1" stop-color="#6ee7b7"/>
+    </linearGradient>
+    <linearGradient id="rule" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0" stop-color="#35e08b" stop-opacity="0.9"/>
+      <stop offset="1" stop-color="#38bdf8" stop-opacity="0"/>
+    </linearGradient>
+    <clipPath id="card"><rect x="0" y="0" width="1000" height="300" rx="16"/></clipPath>
+    <clipPath id="tickclip"><rect x="0" y="240" width="1000" height="60"/></clipPath>
+  </defs>
+
+  <g clip-path="url(#card)">
+    <rect width="1000" height="300" fill="url(#bg)"/>
+    <rect width="1000" height="300" fill="url(#glowA)"/>
+    <rect width="1000" height="300" fill="url(#glowB)"/>
+
+    <!-- pitch markings -->
+    <g stroke="#9fe8c4" stroke-opacity="0.055">
+      <path d="M60 0V240M120 0V240M180 0V240M240 0V240M300 0V240M360 0V240M420 0V240M480 0V240M540 0V240M600 0V240M660 0V240M720 0V240M780 0V240M840 0V240M900 0V240M960 0V240"/>
+    </g>
+    <g stroke="#9fe8c4" stroke-opacity="0.13">
+      <path d="M250 0V240M750 0V240"/>
+      <path d="M500 0V240" stroke-dasharray="7 9"/>
+    </g>
+
+    <!-- eyebrow -->
+    <text x="56" y="62" fill="#35e08b" font-size="13" letter-spacing="3.4"
+          font-family="ui-monospace,SFMono-Regular,Consolas,Menlo,monospace">SPEC IT. BUILD IT. SHIP IT.</text>
+
+    <!-- name -->
+    <text x="54" y="132" fill="url(#ink)" font-size="58" font-weight="700"
+          textLength="560" lengthAdjust="spacing"
+          font-family="Segoe UI,Roboto,Helvetica Neue,Arial,sans-serif">CAMERON BUBYN</text>
+
+    <rect x="56" y="152" width="470" height="2" fill="url(#rule)" rx="1"/>
+
+    <!-- rotating line -->
+    <g font-size="17.5" font-family="ui-monospace,SFMono-Regular,Consolas,Menlo,monospace">
+      <text x="56" y="192" fill="#9fb3c8" opacity="0">
+        <tspan fill="#35e08b">&gt; </tspan><tspan fill="#dbe7f3">computer vision that reads a rugby match</tspan><tspan fill="#35e08b">_<animate attributeName="opacity" values="1;1;0;0" keyTimes="0;0.49;0.5;1" dur="1.06s" repeatCount="indefinite"/></tspan>
+        <animate attributeName="opacity" values="0;1;1;0;0" keyTimes="0;0.01;0.173;0.187;1" dur="15s" begin="0s" repeatCount="indefinite"/>
+      </text>
+      <text x="56" y="192" fill="#9fb3c8" opacity="0">
+        <tspan fill="#35e08b">&gt; </tspan><tspan fill="#dbe7f3">a blackjack trainer that watches real cards</tspan><tspan fill="#35e08b">_<animate attributeName="opacity" values="1;1;0;0" keyTimes="0;0.49;0.5;1" dur="1.06s" repeatCount="indefinite"/></tspan>
+        <animate attributeName="opacity" values="0;1;1;0;0" keyTimes="0;0.01;0.173;0.187;1" dur="15s" begin="3s" repeatCount="indefinite"/>
+      </text>
+      <text x="56" y="192" fill="#9fb3c8" opacity="0">
+        <tspan fill="#35e08b">&gt; </tspan><tspan fill="#dbe7f3">an embroidery digitizer in your browser</tspan><tspan fill="#35e08b">_<animate attributeName="opacity" values="1;1;0;0" keyTimes="0;0.49;0.5;1" dur="1.06s" repeatCount="indefinite"/></tspan>
+        <animate attributeName="opacity" values="0;1;1;0;0" keyTimes="0;0.01;0.173;0.187;1" dur="15s" begin="6s" repeatCount="indefinite"/>
+      </text>
+      <text x="56" y="192" fill="#9fb3c8" opacity="0">
+        <tspan fill="#35e08b">&gt; </tspan><tspan fill="#dbe7f3">a whole sports network, entirely simulated</tspan><tspan fill="#35e08b">_<animate attributeName="opacity" values="1;1;0;0" keyTimes="0;0.49;0.5;1" dur="1.06s" repeatCount="indefinite"/></tspan>
+        <animate attributeName="opacity" values="0;1;1;0;0" keyTimes="0;0.01;0.173;0.187;1" dur="15s" begin="9s" repeatCount="indefinite"/>
+      </text>
+      <text x="56" y="192" fill="#9fb3c8" opacity="0">
+        <tspan fill="#35e08b">&gt; </tspan><tspan fill="#dbe7f3">built in public, shipped to real people</tspan><tspan fill="#35e08b">_<animate attributeName="opacity" values="1;1;0;0" keyTimes="0;0.49;0.5;1" dur="1.06s" repeatCount="indefinite"/></tspan>
+        <animate attributeName="opacity" values="0;1;1;0;0" keyTimes="0;0.01;0.173;0.187;1" dur="15s" begin="12s" repeatCount="indefinite"/>
+      </text>
+    </g>
+
+    <text x="56" y="219" fill="#64788c" font-size="13.5" letter-spacing="0.6"
+          font-family="ui-monospace,SFMono-Regular,Consolas,Menlo,monospace">rugby · computer vision · sports sims · tools that solve one real problem</text>
+
+    <!-- live badge -->
+    <g>
+      <rect x="800" y="44" width="148" height="34" rx="17" fill="#0e2a1e" stroke="#35e08b" stroke-opacity="0.45"/>
+      <circle cx="823" cy="61" r="5" fill="#35e08b" opacity="0.5">
+        <animate attributeName="r" values="5;16" dur="2.3s" repeatCount="indefinite"/>
+        <animate attributeName="opacity" values="0.5;0" dur="2.3s" repeatCount="indefinite"/>
+      </circle>
+      <circle cx="823" cy="61" r="4.5" fill="#35e08b"/>
+      <text x="838" y="66" fill="#8ff0c0" font-size="12.5" letter-spacing="2.1"
+            font-family="ui-monospace,SFMono-Regular,Consolas,Menlo,monospace">BUILDING</text>
+    </g>
+
+    <!-- ticker -->
+    <rect x="0" y="240" width="1000" height="60" fill="#05080c" fill-opacity="0.72"/>
+    <rect x="0" y="240" width="1000" height="1" fill="#35e08b" fill-opacity="0.28"/>
+    <g clip-path="url(#tickclip)">
+      <g>
+        <animateTransform attributeName="transform" type="translate" from="0 0" to="-1560 0" dur="36s" repeatCount="indefinite"/>
+        <text x="0" y="276" fill="#7f95a8" font-size="14" textLength="1560" lengthAdjust="spacing"
+              font-family="ui-monospace,SFMono-Regular,Consolas,Menlo,monospace">EliteSimSPN  //  blackjack-vision  //  Satin Studio  //  Dungeon Cascades  //  BOSS Blueprint  //  drill-deck  //  Perfect Pour  //  GainlineIQ  //  PolyDock Designer  //  Jeopardy  //  </text>
+        <text x="1560" y="276" fill="#7f95a8" font-size="14" textLength="1560" lengthAdjust="spacing"
+              font-family="ui-monospace,SFMono-Regular,Consolas,Menlo,monospace">EliteSimSPN  //  blackjack-vision  //  Satin Studio  //  Dungeon Cascades  //  BOSS Blueprint  //  drill-deck  //  Perfect Pour  //  GainlineIQ  //  PolyDock Designer  //  Jeopardy  //  </text>
+      </g>
+    </g>
+    <rect x="0" y="240" width="132" height="60" fill="#05080c"/>
+    <rect x="0" y="240" width="132" height="60" fill="#35e08b" fill-opacity="0.1"/>
+    <text x="24" y="276" fill="#35e08b" font-size="13" letter-spacing="2.2"
+          font-family="ui-monospace,SFMono-Regular,Consolas,Menlo,monospace">SHIPPED</text>
+    <rect x="131" y="240" width="1" height="60" fill="#35e08b" fill-opacity="0.35"/>
+
+    <rect x="0.5" y="0.5" width="999" height="299" rx="16" fill="none" stroke="#35e08b" stroke-opacity="0.16"/>
+  </g>
+</svg>
