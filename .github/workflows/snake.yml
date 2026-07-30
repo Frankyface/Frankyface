@@ -4,9 +4,8 @@ on:
   schedule:
     - cron: "0 6 * * *"
   workflow_dispatch:
-  push:
-    branches:
-      - main
+  # Deliberately no push trigger: the snake is rendered from the contribution
+  # graph, not from anything in this repo, so a content push tells it nothing.
 
 permissions:
   contents: write
