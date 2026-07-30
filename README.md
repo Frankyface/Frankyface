@@ -150,7 +150,7 @@ The bigger swings — mostly private while they cook.
   <img alt="GitHub statistics" src="https://raw.githubusercontent.com/Frankyface/Frankyface/main/assets/stats-dark.svg" width="100%">
 </picture>
 
-<sub>Rendered from the live API by <a href="scripts/build-stats.mjs"><code>build-stats.mjs</code></a> and committed daily — no third-party stat service to rate-limit or go down.</sub>
+<sub>Rendered from the live API by <a href="https://github.com/Frankyface/Frankyface/blob/main/scripts/build-stats.mjs"><code>build-stats.mjs</code></a> and committed daily — no third-party stat service to rate-limit or go down.</sub>
 
 <br><br>
 
